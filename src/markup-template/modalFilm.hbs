@@ -1,0 +1,66 @@
+
+<img class="modal__img" src="{{this.img1x}}" alt="{{this.title}}" 
+sizes="(min-width: 1024px) 274px, (min-width: 768px) 294px, (max-width: 767px) 280px" 
+srcset="https://image.tmdb.org/t/p/original{{this.img1x}} 342w, {{this.img2x}} 780w"
+>
+
+<div class="film__info">
+    <h2 class="modal__title">
+        {{this.title}}
+    </h2>
+        <div class="film__info-list">
+            <span class="film__property vote">Vote / Votes</span>
+            <div class="film__stat">
+                <span class="film__stat-vote">{{this.vote_average}}</span>/ <span class="film__stat-vote film__stat-votes">{{this.vote_count}}</span>
+            </div> 
+        </div>
+        
+        <div class="film__info-list">
+            <span class="film__property popularity">Popularity</span>
+            <span class="film__stat">{{this.popularity}}</span>
+        </div>
+        
+        <div class="film__info-list">
+            <span class="film__property original-title">Original Title</span>                
+            <span class="film__stat">{{this.original_title}}</span>
+        </div>
+        
+        <div class="film__info-list">
+            <span class="film__property genre">Genre</span>
+            <span class="film__stat">            
+                {{#if genres_list}}
+                {{#each genres_list}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
+                {{else}}
+                unknown
+                {{/if}}
+            </span>                   
+        </div>      
+
+    <div class="about">
+        <h3 class="about-title">
+            ABOUT
+        </h3>
+        <p class="about-text">
+            {{this.overview}}        
+        </p>
+    </div>
+    <div class="main__btn-modal">
+        <button type="button" id="btn__watched" class="main__btn main__btn-margin">
+        ADD TO WATCHED
+        </button>
+        <button type="button" id="btn__queue" class="main__btn">
+        ADD TO QUEUE
+        </button>
+    </div>  
+    <div class="logo">
+        {{!-- <span class="film__property studio">Studio</span>   --}}
+        <img class="logo__img" src="https://image.tmdb.org/t/p/original{{this.logo}}" 
+        alt=" {{this.title}} "
+        {{!-- width="90px" height="60px" --}}
+            >
+    </div>
+   
+</div>
+
+
+ 

@@ -1,0 +1,79 @@
+.tui-pagination {
+  &.height_modifier {
+    height: 40px;
+  }
+}
+
+.tui-pagination .tui-page-btn {
+  &.button_modifier,
+  &.button_modifier-prev {
+    width: 40px;
+    height: 40px;
+    color: #000000;
+    padding: 13px 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+}
+
+.tui-pagination .tui-page-btn {
+  &.button_modifier-last,
+  &.button_modifier-first {
+    display: none;
+  }
+}
+
+.tui-pagination .tui-page-btn {
+  &.button_more-next,
+  &.button_more-prev,
+  &.button_more {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 8px 0 6px;
+    color: #000000;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+}
+
+.tui-pagination .tui-page-btn {
+  &.button_more-last,
+  &.button_more-first {
+    display: none;
+  }
+}
+
+.tui-pagination .tui-is-selected,
+.tui-pagination strong {
+  &.selected-accent {
+    background-color: #ff6b08;
+  }
+}
+
+.tui-pagination .tui-first-child.tui-is-selected {
+  &.selected-accent {
+    border-left: 1px solid #ff6b08;
+  }
+}
+
+.tui-pagination .tui-last-child.tui-is-selected {
+  &.selected-accent {
+    border-right: 1px solid #ff6b08;
+  }
+}
+
+.tui-pagination .tui-is-selected:hover {
+  &.selected-accent {
+    background-color: #ff6b08;
+  }
+}
+
+#visually-hidden {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+}
