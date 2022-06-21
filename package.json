@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://RomanKhrapai.github.io/filmoteka",
+  "homepage": "https://roman-solovei.github.io/Progect_filmoteka/",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /filmoteka/"
